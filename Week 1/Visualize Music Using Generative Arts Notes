@@ -1,1 +1,10 @@
-
+- Goal is to provide musicians a way to enhance their performance and give their audience a more enriching experience
+- 3 step process to generate visuals
+    - music analysis
+        - determines instruments, tempo, pitch, dynamics
+    - textural description generation
+        - uses Spotify's music classifier Basic Pitch
+        - OpenSmile's EERING feature extraction
+    - generate art based on description
+        - uses stable diffusion
+  
