@@ -1,0 +1,23 @@
+Notes from Learning audio concepts from natural language supervision
+https://arxiv.org/pdf/2206.04769
+
+- Aims to connect audio and text descriptions in a joint multimodal space
+  - a joint multimodal space is a shared representation where data in different forms can be represented close to each other in the same space.
+  - so there is an audio vector and a text vector and similar audio and text pairs will be seen very similarly
+- CLAP was trained with 128k audio and text pairs
+
+Introduction:
+- humans are able to hear sounds and extract meaning
+- ML models attempt to do the same with classification which greatly limits what is possible if there is a finite number of classifications and lowers flexibility
+- SSL (self supervised learing) adds flexibility however because there are no labels will not be able to include the meaning of the audio itself which is important
+- Zero shot predictions can take any input audio and yield a prediction score without being explicitly trained
+- The goal is to have a model learn the relationship between acoustic semantics and language semantics
+- Natural Language supervision: instead of class labels a model will use a description instead
+- Other zero shot predictions such as CLIP and Florence and Wav2CLIP and Audioclip
+- This tool uses Contrastive learning to bring together 2 encoders, and enables zero shot predictions (predictions that don't need to be explicitly trained on labeled data as would be necessary for classification)
+
+Method:
+- Input: Audio and text pairs
+- passed to an audio encoder and a text encoder
+  - encoders are forms of feauture extractors 
+
