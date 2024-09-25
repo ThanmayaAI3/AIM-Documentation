@@ -1,1 +1,7 @@
+An important evaluation metric: as it relates to the project!!
+
+- IMSM (image music similarity metric) 
+- uses both the clip and clap score to gather image and audio embeddings to figure out the similarity between the audio and the image that has been produced.
+- Embeddings:
+
 
