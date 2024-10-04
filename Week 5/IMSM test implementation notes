@@ -40,4 +40,9 @@ for item in data_set_file['youtube_video_id']:
         continue
     exit(0)
 
-not producing mp3 even with the prefferred code set up
+not producing mp3 even with the preferred code set up
+
+
+10/4:
+Update:
+Creates a csv file of Melbench IMSM scores but scores don't appear very high
