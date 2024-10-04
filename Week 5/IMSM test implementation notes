@@ -1,0 +1,43 @@
+Goal: test IMSM on the data from the MelBench dataset
+- this data is formatted as a zip file with various types of music
+  - blues, jazz
+  - in the zip file there is a csv file with the youtube links and the path to the respective image that is generated. 
+    - the csv file also has a the text input where there is a description of both the image and the audio input 
+
+Task:
+Create a script to loop through the MelBench data in order to find all the IMSM scores and look through how they all compare with eachother
+- Issue : Find a library to download youtube links as mp3 to pass to the IMSM model (since it takes time)
+- Possible solution: pytube: https://github.com/pytube/pytube/tree/master  
+- Not very robust since pytube relies heavily on regular expressions (regex) to find specific parts of YouTube's dynamically generated JavaScript. Since these structures aren't static and change often, pytube breaks whenever there's a mismatch between its expected regex patterns and the actual content on YouTube.
+- Possible solution: yt_dlp
+- Could be more robust
+- yt-dlp works!
+- however it produces webm and m4a files and doesn't produce mp3 files which are needed for the rest of the model
+- NOTE: script thus far takes a long time so this process may slow down my computer abilities
+
+Task: 
+Download FFmpeg: https://ffmpeg.org/download.html
+- which is a converts different file formats between eachother 
+
+code thus far:
+
+ydl_opts = {
+    'format': 'bestaudio/best',
+    'postprocessors': [{
+        'key': 'FFmpegExtractAudio',
+        'preferredcodec': 'mp3',
+        'preferredquality': '192',
+    }],
+    'outtmpl': '%(title)s.%(ext)s',  # Name the output file based on the video title
+}
+
+for item in data_set_file['youtube_video_id']:
+    try:
+        with YoutubeDL(ydl_opts) as ydl:
+            ydl.download([item])
+    except DownloadError as e:
+        print(f"Error downloading video: {e}")
+        continue
+    exit(0)
+
+not producing mp3 even with the prefferred code set up
