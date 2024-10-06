@@ -1,0 +1,3 @@
+- there is an issue with the scores as they are too low 
+- try using melfusions code exactly 
+- try using sounds and what makes those sounds respectively as the ground truth to see if there is a change in the score output
