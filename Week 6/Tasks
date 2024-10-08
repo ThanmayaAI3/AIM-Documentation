@@ -1,3 +1,7 @@
 Run a starter python program on gilbreth
   - open the gilbreth server on vscode
 Fix IMSM code to get lower values and test on the new updated code
+
+Confusion is why the melfusion imsm code has two different tests and runs a normalization softmax on both of them
+- take just their code and see if it works
+- right now the only difference is that my code doesn't incorporate a softmax and it seems to take in two sets of data and computes every output
