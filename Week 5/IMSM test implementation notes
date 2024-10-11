@@ -43,6 +43,6 @@ for item in data_set_file['youtube_video_id']:
 not producing mp3 even with the preferred code set up
 
 
-10/4:
-Update:
+10/4 Update:
 Creates a csv file of Melbench IMSM scores but scores don't appear very high
+Primary issues: scores should be higher than 0.005 since the MelFusion paper talks about IMSM scores being greater than 0.5
