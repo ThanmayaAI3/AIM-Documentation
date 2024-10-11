@@ -1,1 +1,14 @@
+StoryDiffusion generates consistent images and videos from text stories.
 
+- Consistent Self-Attention keeps characters' faces and clothes the same across images.
+Semantic Motion Predictor creates smooth transitions in videos by predicting movements based on meaning.
+- Works with pre-trained models like Stable Diffusion, requiring no extra training. Ideal for visual storytelling.
+- Uses Consistent Self-Attention to keep characters the same across images
+- Doesn't need extra training, can be added easily to existing models
+- Creates consistent images for telling stories
+- Uses a Semantic Motion Predictor to make smooth transitions between images in videos
+- Predicts movements based on meaning, not just image details
+- Can handle big movements and long videos
+- Works with popular pre-trained models like Stable Diffusion
+- Splits a story into parts and makes images for each part
+- Keeps both the character's face and clothes the same in all images
