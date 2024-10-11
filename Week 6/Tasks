@@ -20,3 +20,4 @@ Confusion is why the melfusion imsm code has two different tests and runs a norm
 
 10/11/2024:
 - Altered code to add clip and clap and also make it more readable
+- Tested 2 examples from MelBench and got odd results
