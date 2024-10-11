@@ -5,3 +5,16 @@ Fix IMSM code to get lower values and test on the new updated code
 Confusion is why the melfusion imsm code has two different tests and runs a normalization softmax on both of them
 - take just their code and see if it works
 - right now the only difference is that my code doesn't incorporate a softmax and it seems to take in two sets of data and computes every output
+
+10/10/2024:
+- IMSM code fixed!
+- call with Chiho Notes:
+  - 1. checking text relavance
+  - 2. implement it so that it works with video (check possible length of video)
+- Questions I still have:
+  - Why does the melfusion code take 2 image, audio, text groups to run the code.
+  - What part of the audio is being analyzed/ What is truncated/ What is tokenized for text
+- Next Steps:
+  - Check with the MelBench data set
+  - Check with the MelBench output(Could be different than the MelBench dataset)
+ 
