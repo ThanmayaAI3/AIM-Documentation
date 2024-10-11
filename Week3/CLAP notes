@@ -22,3 +22,10 @@ Method:
   - encoders are forms of feauture extractors 
 
 https://arxiv.org/abs/2103.00020
+- Zero-shot CLIP performance on FairFace dataset
+- Linear probing for feature quality evaluation
+- Bias probes to detect social biases (inspired by Buolamwini & Gebru, Kärkkaïnen & Joo)
+- Accuracy comparison with FairFace and ResNext-101 Instagram models
+- Demographic breakdown for race, gender, and age classification
+- Analysis of bias across categories (e.g., White, Non-White, Male, Female)
+- Evaluated using race, gender, and age classification tasks
