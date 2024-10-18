@@ -1,4 +1,5 @@
 - Take a pause from IMSM (do more research on it later)
+    - Challenges: want to make sure that IMSM is going to be a valueable output
 - Test CLIP and CLAP on our model output
     - Challenges: there are multiple images in our video demos
         - There are also different portions of the song that evoke a different tone
@@ -6,4 +7,10 @@
         - The prompts are chronological with the song? 
         - how to optimally match the intended prompt with the generated image of the video
            - (is that even a concern should we even want the scores to be high)
+    - Possible Solution: Divide up the video into each from and just check chronologically with the text
+    - Another possible solution: Divide up the video as before and then test all promtps with all 
 - Create code to test CLIP and CLAP metrics easier
+
+- Code: preprocess_video.py: segments parts of the video output to gather all generated screenshot
+    - will be used to gather the similarity of the image and generated text prompts.
+    - Question: Are there the same number of prompts as there are the number of generated images?
