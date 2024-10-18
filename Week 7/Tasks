@@ -13,4 +13,6 @@
 
 - Code: preprocess_video.py: segments parts of the video output to gather all generated screenshot
     - will be used to gather the similarity of the image and generated text prompts.
-    - Question: Are there the same number of prompts as there are the number of generated images?
+    - Question: Are there the same number of prompts as there are the number of generated images? 
+        preprocess_text.py will format the text into a list that can be inputed
+        imsm_model.py will calculate the clip, clap and imsm scores for our model output
