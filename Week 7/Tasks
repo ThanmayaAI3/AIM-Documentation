@@ -1,3 +1,9 @@
 - Take a pause from IMSM (do more research on it later)
-- Test CLIP and CLAP on our code
+- Test CLIP and CLAP on our model output
+    - Challenges: there are multiple images in our video demos
+        - There are also different portions of the song that evoke a different tone
+        - My code currently truncates code so a lot of meaning is lost 
+        - The prompts are chronological with the song? 
+        - how to optimally match the intended prompt with the generated image of the video
+           - (is that even a concern should we even want the scores to be high)
 - Create code to test CLIP and CLAP metrics easier
