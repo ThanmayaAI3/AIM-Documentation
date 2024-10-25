@@ -1,0 +1,3 @@
+- Normalize CLIP and CLAP scores 
+- Gather average score throughout the video
+- Pipeline is little complicated (preprocessing occurs separately from score calculation)
