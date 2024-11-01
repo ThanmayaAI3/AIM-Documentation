@@ -1,0 +1,7 @@
+- imsm.py: runs preprocessing and model step together
+  - run that code in order to get clip and clap scores
+
+
+Normalization metrics:
+ - tried to run the min max normalization and getting NaN
+ - possibly because it isn't done at every intermediate step
